@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* Establishing clearfix and overall font-size (rem) and font'family*/
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+html {
+    font-size: 10px; 
+    font-family: "Red Hat Display" sans-serif; 
+}
+
+/* Styling the background of the card and the card itself */ 
+
+main {
+    min-height: 100vh; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 94%); 
+}
+
+.card {
+    text-align: center;
+    width: 32.7rem; 
+    border: 1px solid black; 
+    border-radius: 30px; 
+    background-color: white; 
+}
+
+/*Giving common designs for a and img elements */ 
+
+a {
+    display: block; 
+}
+
+img {
+    width: 100%; 
+}
+
+.hero-illustration img {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+/*Styling the text inside the card */ 
+
+.text-content {
+    text-align: center;
+    padding: 3.2rem; 
+}
+
+.text-content > * + * {
+    margin-top: 2rem; 
+}
+
+.text-content h1 {
+    font-size: 2.4rem; 
+    font-weight: 900; 
+}
+
+.text-content p {
+    font-size: 1.5rem; 
+    line-height: 1.5; 
+    color: hsl(224, 23%, 55%); 
+}
+
+.info-container {
+    display: flex; 
+    align-items: center; 
+    gap: 1rem; 
+    padding: 1.6rem; 
+    background: hsl(225, 100%, 98%); 
+    border-radius: 1.5rem; 
+}
+
+.info-container a {
+    font-size: 1.2rem; 
+}
+
+.image-icon {
+    width: 4.8rem; 
+}
+
+.pricing {
+    margin-right: auto; 
+}
+
+.pricing p:first-of-type {
+    color: black; 
+    font-weight: 700; 
+}
+
+.pricing p:last-of-type {
+    font-size: 1.4rem; 
+}
+
+.text-content > a {
+    text-decoration: none; 
+    color: hsl(224, 23%, 55%); 
+    font-size: 1.5rem; 
+    font-weight: 700; 
+}
+
+/*Button Styling*/ 
+
+button {
+    display: block; 
+    text-align: center; 
+    width: 100%; 
+    background: hsl(245, 75%, 52%); 
+    border: none; 
+    font-size: 1.4rem; 
+    padding: 1.2rem; 
+    border-radius: 1rem;
+    color: white;  
+    box-shadow: 0px 1.5rem 2rem .5rem hsl(245, 75%, 52%, .2); 
+    cursor: pointer; 
+    transition: all 0.2s ease; 
+}
+
+button:hover {
+    background: hsl(224, 23%, 55%); 
+}
+
+
+@media screen and (min-width: 400px) {
+    main {
+        background-image: url("images/pattern-background-desktop.svg"); 
+        background-color: none; 
+        background-size: 100% 50%; 
+        background-repeat: no-repeat; 
+    }
+    .card {
+        width: 45rem; 
+    }
+    .text-content {
+        padding: 5rem; 
+    }
+    .text-content p:first-of-type {
+        font-size: 1.8rem; 
+    }
+    button {
+        font-size: 1.6rem; 
+    }
+}
