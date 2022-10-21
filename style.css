@@ -146,4 +146,7 @@ button:hover {
     button {
         font-size: 1.6rem; 
     }
+    .info-container a {
+        font-size: 1.5rem; 
+    }
 }
